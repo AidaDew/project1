@@ -47,7 +47,12 @@ class SpecialistsResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('name')
+                    ->label('Имя'),
+                Tables\Columns\TextColumn::make('surname')
+                    ->label('Фамилия'),
+                Tables\Columns\TextColumn::make('position')
+                    ->label('Должность')
             ])
             ->filters([
                 //
