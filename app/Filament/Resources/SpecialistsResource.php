@@ -34,12 +34,18 @@ class SpecialistsResource extends Resource
                 Forms\Components\TextInput::make('surname')
                     ->required()
                     ->label('Фамилия'),
+                Forms\Components\TextInput::make('patronymic')
+                    ->required()
+                    ->label('Отчество'),
                 Forms\Components\TextInput::make('position')
                     ->required()
                     ->label('Должность'),
                 Forms\Components\MarkdownEditor::make('information')
                     ->label('Информация')
                     ->required(),
+                Forms\Components\FileUpload::make('image')
+                    ->label('Изображение')
+                    ->directory('/media/specialists')->visibility('public')
             ]);
     }
 

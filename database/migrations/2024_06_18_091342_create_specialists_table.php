@@ -15,8 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('surname');
+            $table->string('patronymic');
             $table->string('position');
             $table->string('information');
+            $table->string('image');
             $table->timestamps();
         });
     }

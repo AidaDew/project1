@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class News extends Model
 {
     protected $fillable = [
-        'title','content'
+        'title','content', 'date', 'image'
+    ];
+
+    protected $casts = [
+        'date' => 'date'
     ];
 }

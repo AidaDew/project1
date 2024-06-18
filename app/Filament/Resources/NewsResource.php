@@ -12,6 +12,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Nette\Utils\Image;
 
 class NewsResource extends Resource
 {
@@ -34,6 +35,13 @@ class NewsResource extends Resource
                 Forms\Components\MarkdownEditor::make('content')
                     ->label('Текст')
                     ->required(),
+                Forms\Components\FileUpload::make('image')
+                    ->label('Изображение')
+                    ->directory('/media/news')->visibility('public'),
+                Forms\Components\DatePicker::make('date')
+                    ->label('Дата публикации')
+
+
             ]);
     }
 
