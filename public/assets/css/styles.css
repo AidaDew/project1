@@ -1,0 +1,71 @@
+body{
+    overflow-x: hidden;
+}
+.swiper-container {
+    width: 100%;
+    /* max-width: 600px; */
+    height: 400px;
+    margin-bottom: 150px; /* Добавлено расстояние между слайдерами */
+    position: relative;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .swiper-container-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(33, 118, 209);
+  }
+  
+  .swiper-slide img {
+    width: 600px;
+    height: 310px;
+    border-radius: 10px;
+  }
+  
+  .slide-content {
+    padding: 20px;
+  }
+  
+  .slide-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .slide-description {
+    font-size: 1em;
+  }
+  
+  .swiper1 .swiper-button-next,
+  .swiper1 .swiper-button-prev,
+  .swiper2 .swiper-button-next,
+  .swiper2 .swiper-button-prev {
+    color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .swiper1 .swiper-button-next {
+    right: 10px;
+  }
+  
+  .swiper1 .swiper-button-prev {
+    left: 10px;
+  }
+  
+  .swiper2 .swiper-button-next {
+    right: 10px;
+  }
+  
+  .swiper2 .swiper-button-prev {
+    left: 10px;
+  }
+  

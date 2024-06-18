@@ -1,0 +1,114 @@
+*.header {
+  background-color: #6ea3c4;
+    color: white;
+    line-height: 110px;
+    
+}
+
+.header-menu {
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+    column-gap: 50px;
+    justify-content: space-evenly;
+    color: white;
+}
+
+a.color{
+  text-decoration: none;
+  color: #6ea3c4;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease; 
+          text-size: 14;
+}
+.img{
+ position: absolute;
+    top: 134px;
+    left: 0;
+    z-index: -1;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("https://fonts.googleapis.com");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:white;
+  font-family: Roboto;
+  font-size: 14pt;
+}
+hr {
+  margin: 10px 0;
+  border: solid 1px black;
+}
+
+a {
+  color: black;
+  cursor:pointer;
+  text-decoration: none;
+}
+div.head {
+  border-bottom: solid 2px black;
+  padding: 20px 0;
+  margin: 40px 0 30px;
+  font-size: 20pt;
+  text-align: center;
+  text-color: white;
+}
+content{
+  text-justify:inter-word;
+  color: #6ea3c4;
+}
+}
+
+a:hover {
+  text-decoration: underline;
+  text-align: center;
+}
+
+img {
+  max-width:20%;
+  object-fit: cover;
+}
+/*BUSINESS*/
+.business__buy-text{
+    text-align: center;
+    color: #6ea3c4;
+    font-size: 42px;
+    font-family: 'Roboto';
+    padding-top: 9px;
+}
+form {
+  width: 60%;
+  margin: 0 auto;
+}
+/*вернуться наверх*/
+.btn-up {
+  /* фиксированное позиционирование */
+  position: fixed;
+  /* цвет фона */
+  background-color: #673ab7;
+  /* расстояние от правого края окна браузера */
+  right: 20px;
+  /* расстояние от нижнего края окна браузера */
+  bottom: 0;
+  /* скругление верхнего левого угла */
+  border-top-left-radius: 8px;
+  /* скругление верхнего правого угла */
+  border-top-right-radius: 8px;
+  /* вид курсора */
+  cursor: pointer;
+  /* отображение элемента как flex */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 50px;
+}

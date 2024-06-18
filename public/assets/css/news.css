@@ -1,0 +1,89 @@
+body{
+  background-color: white;
+  margin: 0 auto;
+  overflow-y: scroll;  /*пролистывание страницы}*/
+  font-family: "Roboto";
+}
+.header {
+  background-color: #124E73;
+  color: white;
+  line-height: 110px;
+}
+
+.header-menu {
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  column-gap: 50px;
+  justify-content: space-evenly;
+}
+a.color{
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; 
+  text-size: 14;
+}
+.block1{
+  display: flex;
+  justify-content: space-between;
+/*  gap: 200px;*/
+/* между текстовой частью и картинкой */
+/*  border-bottom: 2px solid #124E73;*/
+  margin:45px 100px;
+/*  height: 75vh;*/
+}
+.block1-desc{
+  display: flex;
+  flex-direction: column;
+  gap: 7px; 
+/* между заголовком и текстом */
+}
+#news1{
+  font-size: 44pt ;
+  color: #124E73;
+}
+#news2{
+  color: #124E73;
+  width: 345px;
+}
+#img1{
+  border-radius: 10px;
+  size: 40%;
+}
+.plitka{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  gap: 40px;
+  margin: 45px 100px;
+}
+.plitka_desk{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.plitka_desk:hover{
+  transform: scale(1.1);
+}
+.img22{
+  border-radius: 5px;
+  display: block;
+  overflow: hidden; 
+}
+.plitka_zag{
+  text-decoration: none;
+  color:#124E73 ;
+}
+.plitka_text{
+  opacity: 0.6;
+  font-size: 10pt;
+  position: relative;
+  top: -22px;
+}
+.plitka_zag:hover{
+  color:#2089c9 ;
+}
+
