@@ -49,4 +49,5 @@ Route::post('/request', function (Request $request) {
         'message' => $message,
     ]);
 
+    return back()->withInput();
 });
