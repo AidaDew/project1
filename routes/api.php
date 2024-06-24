@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\Models\DoctorsAppointment;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Validator;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +18,35 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::post('/request', function (Request $request) {
+    $name = $request->name;
+    $email = $request->email;
+    $phone = $request->phone;
+    $department = $request->department;
+    $message = $request->message;
+
+    $request->validate([
+        'name' => 'required',
+        'email' => 'required',
+        'phone' => 'required',
+        'department' => 'required',
+        'message' => 'required',
+    ]);
+    $request = Validator::make($request->all(), [
+        'name' => 'required',
+        'email' => 'required',
+        'phone' => 'required',
+        'department' => 'required',
+        'message' => 'required',
+    ]);
+    $doc = DoctorsAppointment::create([
+        'name' => $name,
+        'email' => $email,
+        'phone' => $phone,
+        'department' => $department,
+        'message' => $message,
+    ]);
+
 });

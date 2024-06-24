@@ -52,6 +52,12 @@ class NewsResource extends Resource
                 //
                 Tables\Columns\TextColumn::make('title')
                     ->label('Заголовок')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('date')
+                    ->label('Дата публикации')
+                    ->date()
+                    ->searchable()
+
 
             ])
             ->filters([

@@ -49,9 +49,17 @@ class ReviewsResource extends Resource
         return $table
             ->columns([
                 //
-                Tables\Columns\TextColumn::make('name'),
-                Tables\Columns\TextColumn::make('email'),
+                Tables\Columns\TextColumn::make('name')
+                    ->label('Имя')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('email')
+                    ->label('Электронная почта')
+                    ->copyable()
+                    ->copyMessage('Email address copied')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('phone')
+                    ->label('Номер телефона')
+                    ->searchable()
             ])
             ->filters([
                 //

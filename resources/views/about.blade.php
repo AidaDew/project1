@@ -179,6 +179,7 @@
         </li>
       </ul>
     </li>
+
   <div class="legal">
     <p>&copy; 2024 Something. All rights reserved.</p>
   </div>

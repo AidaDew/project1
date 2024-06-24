@@ -67,7 +67,7 @@
 
             <div class="feedback-form">
                 <h3>Запись на прием</h3>
-                <form action="submit_feedback.php" method="post">
+                <form action="/api/request"  method="post">
                     <label for="name">Имя:</label>
                     <input type="text" id="name" name="name" required>
 
@@ -88,7 +88,7 @@
                     <label for="message">Сообщение:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
 
-                    <button type="submit">Отправить</button>
+                    <button  onclick="location.href='http://localhost:8000/patients';" type="submit" >Отправить</button>
                 </form>
             </div>
         </div>

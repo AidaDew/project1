@@ -51,9 +51,21 @@ class QuestionsResource extends Resource
         return $table
             ->columns([
                 //
-                TextColumn::make('name'),
-                TextColumn::make('email'),
-                TextColumn::make('phone')
+                Tables\Columns\TextColumn::make('id')
+                    ->label('Номер вопроса')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('name')
+                    ->label('Имя')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('email')
+                    ->label('Электронная почта')
+                    ->copyable()
+                    ->copyMessage('Email address copied')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('phone')
+                    ->label('Номер телефона')
+                    ->searchable()
+
             ])
             ->filters([
                 //
