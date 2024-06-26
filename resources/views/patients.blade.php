@@ -67,7 +67,7 @@
 
             <div class="feedback-form">
                 <h3>Запись на прием</h3>
-                <form action="/api/request" method="post" onsubmit="submitted=true;">
+                <form action="/api/request" method="post">
                     <label for="name">Имя:</label>
                     <input type="text" id="name" name="name" required>
 
